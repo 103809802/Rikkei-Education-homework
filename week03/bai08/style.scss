@@ -1,0 +1,50 @@
+$main-color: #2f80ed;
+$text-color: #555;
+
+.quote {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px 25px;
+  background: #f5f5f5;
+  border-left: 5px solid $main-color;
+  border-radius: 10px;
+  position: relative;
+
+  p {
+    color: $text-color;
+    line-height: 1.6;
+    font-style: italic;
+    position: relative;
+
+    &::before {
+      content: "“";
+      font-size: 40px;
+      color: #ccc;
+      position: absolute;
+      left: -15px;
+      top: -10px;
+    }
+
+    &::after {
+      content: "”";
+      font-size: 40px;
+      color: #ccc;
+      position: absolute;
+      right: -10px;
+      bottom: -20px;
+    }
+
+    &::first-letter {
+      font-size: 40px;
+      font-weight: bold;
+      color: $main-color;
+    }
+  }
+
+  span {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #777;
+  }
+}

@@ -1,0 +1,100 @@
+$font-heading: 'Segoe UI', Georgia, sans-serif;
+$font-body:    'Segoe UI', Arial, sans-serif;
+
+$teal:        #2dd4bf;
+$teal-hover:  #14b8a6;
+$white:       #ffffff;
+$white-dim:   rgba(255, 255, 255, 0.65);
+$white-faint: rgba(255, 255, 255, 0.45);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+}
+
+.hero {
+  background: rgba(30, 42, 56, 0.82) url('background.jpg') center / cover no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__name {
+  font-family: $font-heading;
+  font-size: 3rem;      
+  font-weight: 700;
+  color: $white;
+  position: relative;
+  padding-bottom: 0.6rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: $teal;
+    border-radius: 2px;
+  }
+}
+
+.hero__title {
+  font-size: 1.25rem;   
+  font-weight: 400;
+  color: $white-dim;
+  letter-spacing: 0.04em;
+}
+
+.hero__desc {
+  font-size: 14px;       
+  color: $white-faint;
+  max-width: 420px;
+  line-height: 1.7;
+}
+
+.hero__tagline {
+  font-size: 12px;      
+  color: $teal;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 12px 32px;
+  border: 1.5px solid $teal;
+  border-radius: 4px;
+  background: transparent;
+  color: $teal;
+  font-family: $font-body;
+  font-size: 14px;       
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover {
+    background: $teal;
+    color: #1e2a38;
+  }
+}

@@ -1,0 +1,18 @@
+.promo {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #d2691e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #f5e6d3 url("coffee.jpg") no-repeat top left;
+}
+.promo h2 {
+  text-align: center;
+  color: #d2691e;
+  margin-bottom: 10px;
+}
+.promo p {
+  text-align: justify;
+  line-height: 1.6;
+}/*# sourceMappingURL=style.css.map */

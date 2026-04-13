@@ -1,0 +1,140 @@
+$blue-light:  #e6f1fb;
+$blue-mid:    #378ADD;
+$blue-dark:   #185FA5;
+$blue-darker: #0C447C;
+
+$border-default: #dde3ea;
+$border-hover:   #888;
+$bg-card:        #fff;
+$bg-page:        #f0f4f8;
+
+$text-primary:   #111;
+$text-muted:     #555;
+$text-faint:     #666;
+$text-hint:      #888;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: $bg-page;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.pricing-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 860px;
+  width: 100%;
+
+  .plan-card {
+    background: $bg-card;
+    border: 1px solid $border-default;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    transition: border-color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $border-hover;
+
+      .plan-name {
+        font-weight: 700;
+      }
+    }
+
+    &:nth-child(2) {
+      border: 2px solid $blue-mid;
+      background: rgba(55, 138, 221, 0.08);
+
+      &:hover {
+        border-color: $blue-dark;
+      }
+
+      .badge      { display: block; }
+      .plan-name  { color: $blue-dark; font-weight: 700; font-size: 18px; }
+      .plan-price { color: $blue-dark; }
+
+      .plan-btn {
+        background: $blue-dark;
+
+        &:hover { background: $blue-darker; }
+      }
+    }
+  }
+  
+  .badge {
+    display: none; 
+    background: $blue-light;
+    color: $blue-dark;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+ 
+  .plan-name {
+    font-size: 15px;
+    color: $text-muted;
+    font-weight: 400;
+    transition: font-weight 0.15s;
+  }
+
+  .plan-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: $text-primary;
+    line-height: 1.1;
+
+    span {
+      font-size: 13px;
+      font-weight: 400;
+      color: $text-hint;
+    }
+  }
+
+  .plan-features {
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      font-size: 13px;
+      color: $text-faint;
+    }
+  }
+
+  .plan-btn {
+    margin-top: auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: $blue-mid;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s;
+
+    &:hover { background: $blue-dark; }
+  }
+} 

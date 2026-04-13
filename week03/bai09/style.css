@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.pricing-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 860px;
+  width: 100%;
+}
+.pricing-wrap .plan-card {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+.pricing-wrap .plan-card:hover {
+  border-color: #888;
+}
+.pricing-wrap .plan-card:hover .plan-name {
+  font-weight: 700;
+}
+.pricing-wrap .plan-card:nth-child(2) {
+  border: 2px solid #378ADD;
+  background: rgba(55, 138, 221, 0.08);
+}
+.pricing-wrap .plan-card:nth-child(2):hover {
+  border-color: #185FA5;
+}
+.pricing-wrap .plan-card:nth-child(2) .badge {
+  display: block;
+}
+.pricing-wrap .plan-card:nth-child(2) .plan-name {
+  color: #185FA5;
+  font-weight: 700;
+  font-size: 18px;
+}
+.pricing-wrap .plan-card:nth-child(2) .plan-price {
+  color: #185FA5;
+}
+.pricing-wrap .plan-card:nth-child(2) .plan-btn {
+  background: #185FA5;
+}
+.pricing-wrap .plan-card:nth-child(2) .plan-btn:hover {
+  background: #0C447C;
+}
+.pricing-wrap .badge {
+  display: none;
+  background: #e6f1fb;
+  color: #185FA5;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.pricing-wrap .plan-name {
+  font-size: 15px;
+  color: #555;
+  font-weight: 400;
+  transition: font-weight 0.15s;
+}
+.pricing-wrap .plan-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.1;
+}
+.pricing-wrap .plan-price span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+}
+.pricing-wrap .plan-features {
+  list-style: none;
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing-wrap .plan-features li {
+  font-size: 13px;
+  color: #666;
+}
+.pricing-wrap .plan-btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #378ADD;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.pricing-wrap .plan-btn:hover {
+  background: #185FA5;
+}/*# sourceMappingURL=style.css.map */
