@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+
+    .logo {
+        float: left; 
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav {
+        float: right;
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .clear {
+        clear: both; 
+    }
+}
+
+.content {
+    padding: 30px;
+}
