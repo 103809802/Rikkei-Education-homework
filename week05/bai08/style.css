@@ -1,0 +1,27 @@
+.gallery {
+  width: 600px;
+  margin: 50px auto;
+  background: #2f2f2f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.gallery h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 400px;
+  gap: 10px;
+}
+.gallery img {
+  width: calc(33.33% - 10px);
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}/*# sourceMappingURL=style.css.map */
